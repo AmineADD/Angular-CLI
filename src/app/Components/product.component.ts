@@ -30,7 +30,7 @@ export class ProductComponent {
   @Output()
   onClick: Function = (index: number) => {
     this._productsService.saveNewItemOnStorage(this.products[index])
-    this.nbOfSavedProducts = +1;
+    this.nbOfSavedProducts = this.nbOfSavedProducts + 1;
   }
 
 }
