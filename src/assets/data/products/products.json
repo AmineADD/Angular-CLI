@@ -1,0 +1,66 @@
+[
+    {
+        "index": 0,
+        "imageUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-finish-select-202207-blue?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1662149977576",
+        "name": "Iphone 12",
+        "specifications": [
+            {
+                "color": "black",
+                "weight": 250,
+                "storage": 256,
+                "price": 1000
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "imageUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000",
+        "name": "Air pods",
+        "specifications": [
+            {
+                "color": "white",
+                "weight": 50,
+                "price": 200
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "imageUrl": "https://proxymedia.woopic.com/api/v1/images/1618%2Fedithor%2Fterminaux%2F636x900-lavande-img-4_635a4c8c650d2e0abaa60056.jpg?format=480x480&saveas=jpg&saveasquality=85",
+        "name": "Samsung S22",
+        "specifications": [
+            {
+                "color": "black",
+                "weight": 250,
+                "storage": 512,
+                "price": 900
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "imageUrl": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2019/06/samsung-galaxy-note-10-2019-frandroid-300x300.png?webp=1&key=261f21ed",
+        "name": "Samsung Note10",
+        "specifications": [
+            {
+                "color": "black",
+                "weight": 250,
+                "storage": 512,
+                "price": 950
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "imageUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-2-202209_GEO_EMEA?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1660753617539",
+        "name": "Iphone 14",
+        "specifications": [
+            {
+                "color": "white",
+                "weight": 250,
+                "storage": 256,
+                "price": 1300
+            }
+        ]
+    }
+]

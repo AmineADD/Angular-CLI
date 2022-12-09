@@ -1,4 +1,7 @@
-export type link = {
+type Link = {
     name: string;
     url: string;
 }
+
+
+export default Link;
