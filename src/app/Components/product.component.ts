@@ -10,7 +10,7 @@ import { Product } from '../Services/types/Product';
 export class ProductComponent {
   public products: Product[] = [];
 
-  // comming from parent function
+  /* comming from parent function */
   @Input()
   onButtonHover: Function = () => null;
 
