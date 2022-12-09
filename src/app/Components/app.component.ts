@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project';
-  banks = ["No bank", "LCL", "BMP", "Boursorama"]
 }
