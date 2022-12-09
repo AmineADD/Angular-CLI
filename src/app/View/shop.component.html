@@ -1,1 +1,4 @@
-<p>shop works!</p>
+<div id="shop-container">
+    <h1 [ngClass]="titleClassName">{{ title }}</h1>
+    <products [onButtonHover]="onItemButtonHover"></products>
+</div>

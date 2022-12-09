@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LinksService } from '../Services/links.service';
-import { link } from '../Services/types/link';
+import Link from '../Services/types/Link';
 
 @Component({
   selector: 'linksNavBar',
@@ -8,7 +8,7 @@ import { link } from '../Services/types/link';
   styleUrls: ['../View/styles/nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-  public links: link[] = []
+  public links: Link[] = []
 
   constructor(private _linksService: LinksService) { }
 

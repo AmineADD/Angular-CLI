@@ -1,0 +1,26 @@
+<div id="product-container">
+    <div class="product" *ngFor="let product of products">
+        <img [src]="product.imageUrl" alt="product.name" width=150 height=150>
+        <span class="title">{{ product.name }}</span>
+        <span>
+            specifications :
+            <ul *ngFor="let specs of product.specifications">
+                <li>Color : {{specs.color}}</li>
+                <li>Storage : {{specs.storage ?? "N/A"}}
+                    <span *ngIf="!!specs.storage"> GB</span>
+                </li>
+                <li>Weight : {{specs.weight}}</li>
+                <li>Price : {{specs.price}}</li>
+            </ul>
+        </span>
+        <!-- Comming from parent function : onButtonHover -->
+        <button class="button" (click)="onClick(product.index)" (mouseover)="onButtonHover(true)"
+            (mouseout)="onButtonHover(false)">add to
+            Cart</button>
+    </div>
+    <div class="checkbox-wrapper-10">
+        <input disabled class="tgl tgl-flip" id="cb5" type="checkbox" checked />
+        <label class="tgl-btn" data-tg-off="Empty" [attr.data-tg-on]="nbOfSavedProducts" for="cb5"></label>
+    </div>
+
+</div>
