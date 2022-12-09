@@ -5,7 +5,7 @@ import Cart from '../Services/types/Cart';
 @Component({
   selector: 'cart',
   templateUrl: '../View/cart.component.html',
-  styleUrls: ['../View/styles/cart.component.css']
+  styleUrls: ['./cart.component.css']
 })
 export class CartComponent {
 

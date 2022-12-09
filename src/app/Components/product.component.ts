@@ -5,7 +5,7 @@ import { Product } from '../Services/types/Product';
 @Component({
   selector: 'products',
   templateUrl: '../View/product.component.html',
-  styleUrls: ['../View/Styles/product.component.css', '../View/Styles/shop.component.css']
+  styleUrls: ['./product.component.css', './shop.component.css']
 })
 export class ProductComponent {
   public products: Product[] = [];
