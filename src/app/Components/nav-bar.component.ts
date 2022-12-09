@@ -5,7 +5,7 @@ import Link from '../Services/types/Link';
 @Component({
   selector: 'linksNavBar',
   templateUrl: '../View/nav-bar.component.html',
-  styleUrls: ['../View/styles/nav-bar.component.css']
+  styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
   public links: Link[] = []
