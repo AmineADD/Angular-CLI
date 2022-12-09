@@ -1,0 +1,14 @@
+[
+    {
+        "name": "My Shop",
+        "url": "/myshop"
+    },
+    {
+        "name": "Cart",
+        "url": "/cart"
+    },
+    {
+        "name": "Profil",
+        "url": "/profil"
+    }
+]
