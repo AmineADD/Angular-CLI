@@ -1,7 +1,7 @@
 # Angular CLI - MYSHOP Antoine GHORRA
 
 MyShop is a test project using Angular framework
-
+[demo](https://639351c224b84f6076087bca--stirring-lebkuchen-0a3184.netlify.app/)
 ## New Stucture
 
 ```python
