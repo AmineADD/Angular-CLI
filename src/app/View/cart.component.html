@@ -1,1 +1,47 @@
-<p>cart component works!</p>
+<p *ngIf="cart.length==0">cart is Empty !</p>
+<div *ngIf="cart.length!=0">
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Picture</th>
+                <th>Specifications</th>
+                <th>Quantitiy</th>
+                <th>Price</th>
+                <th>Modify</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of cart">
+                <td>{{ item.product.name }}</td>
+                <td><img [src]="item.product.imageUrl" alt="item.product.name" width=150 height=150></td>
+                <td>
+                    <ul *ngFor="let specs of item.product.specifications">
+                        <li>Color : {{specs.color}}</li>
+                        <li>Storage : {{specs.storage ?? "N/A"}}
+                            <span *ngIf="!!specs.storage"> GB</span>
+                        </li>
+                        <li>Weight : {{specs.weight}}</li>
+                        <li>Price : {{specs.price}}</li>
+                    </ul>
+                </td>
+                <td>{{ item.quantity}}</td>
+                <td>{{ item.quantity * item.product.specifications[0].price}} $</td>
+                <td><button (click)="addItem(item.index)">+</button><button (click)="removeItem(item.index)">-</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        Your Order :
+        <hr />
+        <ol>
+            <li *ngFor="let item of cart">{{item.product.name}} : {{ item.quantity *
+                item.product.specifications[0].price}}
+                $
+            </li>
+        </ol>
+        <hr />
+        Total = {{ totalToPay}} $
+    </div>
+</div>

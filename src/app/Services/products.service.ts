@@ -20,7 +20,8 @@ export class ProductsService {
   getCartFromStorage(): Cart[] {
     const getCurrentCart = localStorage.getItem("cart");
     if (getCurrentCart) {
-      return JSON.parse(getCurrentCart);
+      const carts: Cart[] = JSON.parse(getCurrentCart);
+      return carts.filter(({ quantity }) => quantity > 0);
     }
     return []
   }
@@ -36,6 +37,20 @@ export class ProductsService {
       }
       return oldItem;
     }) : getCurrentCart.push({ index: item.index, quantity: 1, product: item })
+    this.save(getCurrentCart)
+  }
+
+  removeItemOnStorage(item: Product) {
+    let getCurrentCart = this.getCartFromStorage();
+    getCurrentCart = getCurrentCart.map((oldItem) => {
+      if (oldItem.index === item.index) {
+        return {
+          ...oldItem,
+          quantity: oldItem.quantity - 1
+        }
+      }
+      return oldItem;
+    })
     this.save(getCurrentCart)
   }
 
