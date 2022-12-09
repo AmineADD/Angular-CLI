@@ -5,7 +5,7 @@ export type Product = {
     specifications: {
         color: string;
         weight: number;
-        storage?: number; // air pods do not have any storage capacity
+        storage?: number;  /*  air pods do not have any storage capacity */
         price: number
     }[]
 }

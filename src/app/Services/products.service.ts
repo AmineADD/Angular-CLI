@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import LOCAL_STORAGE_KEY from 'src/assets/constants/constant';
-import { Cart } from './types/cart';
+import Cart from './types/Cart';
 import { Product } from './types/Product';
 
 @Injectable({

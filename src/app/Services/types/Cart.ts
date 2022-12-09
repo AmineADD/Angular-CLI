@@ -1,3 +1,5 @@
 import { Product } from "./Product";
 
-export type Cart = { product: Product, quantity: number, index: number }
+type Cart = { product: Product, quantity: number, index: number }
+
+export default Cart;

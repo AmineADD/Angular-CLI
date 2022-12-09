@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'profil',
-  templateUrl: '../View/profil.component.html',
+  template: '<p>Profile Page !_!</p>',
   styleUrls: ['../View/Styles/profil.component.css']
 })
 export class ProfilComponent {
